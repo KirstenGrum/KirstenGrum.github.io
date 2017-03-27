@@ -1,0 +1,84 @@
+
+
+header {
+			background-color: #FFFFFF;
+			padding: 15px;
+		}
+
+
+nav {
+	text-align: right;
+	text-decoration: none;
+}
+
+nav a {
+			color: #4f4f4f;
+			margin-right: 10px;
+		}
+
+
+
+img #logo {
+			align-content: left;
+			background-repeat: no-repeat;
+		}
+
+
+
+
+		body {
+
+background-image: url(maybeCork.jpg);
+ background-repeat: no-repeat;
+ background-size: cover;
+
+		}
+
+/* fonts, headings and paragraphs */
+
+
+
+h5 {
+			font-family: Arial, Helvetica, sans-serif; font-size: 15px; 
+			text-align: center;
+			color: #4f4f4f;
+		}
+h3 {
+			font-family: Arial, Helvetica, sans-serif; font-size: 50px; 
+			text-align: center;
+			color: #4f4f4f;
+		}
+
+		p {
+			font-family: Arial, Helvetica, sans-serif; font-size: 25px; 
+			text-align: center;
+			color: white;
+			margin: 20px;
+		}
+
+#slogan {
+			font-family: Arial, Helvetica, sans-serif; font-size: 90px; 
+			text-align: center;
+			font-style: italic;
+			color: #4f4f4f;
+		}
+
+
+
+
+
+
+
+/* footer only*/
+
+#footer {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	font-style: normal;
+	color: #FFFFFF;
+	background-color: #6B6665;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 5px;
+	width: 100%;
+	margin: 0px;
