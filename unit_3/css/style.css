@@ -1,10 +1,8 @@
-
+/* Keep CSS code cleaner */
 
 header {
-			
-			padding: 15px;
-		}
-
+	padding: 15px;
+}
 
 nav {
 	text-align: right;
@@ -16,97 +14,103 @@ nav a {
 			margin-right: 10px;
 		}
 
+/* unvisited link */
+a:link {
+   text-decoration: none;
+   color: #4f4f4f;
+}
 
+/* visited link */
+a:visited {
+    text-decoration: none;
+    color: #4f4f4f;
+}
+
+/* mouse over link */
+a:hover {
+   text-decoration: none;
+   color: #d3d3d3;
+}
+
+/* selected link */
+a:active {
+    text-decoration: none;
+    color: #4f4f4f;
+}
 
 img #logo {
 			align-content: left;
 			background-repeat: no-repeat;
 		}
 
+body {
+	background-image: url(../images/maybeCork.jpg);
+ 	background-size: cover;
+}
 
+#top-section {
+	background-image: url(../images/homepgstrip.jpg);
+ 	background-size: cover;
+}
 
-
-		body {
-
-background-image: url(../images/maybeCork.jpg);
-
- background-size: cover;
-
-		}
+#top-section div {
+	padding: 1em 0;
+	width: 600px;/* leave this alone so nothing gets scrunched */
+	margin: 0 auto;
+	text-align: left;
+}
 
 /* fonts, headings and paragraphs */
 
 img #home_pg_middle{
-	position: relative;
-width: 100%;
-background-repeat: no-repeat;
+    position: relative;
+    width: 100%;
+    background-repeat: no-repeat;
 }
 
 h5 {
-  position: absolute; 
-   top: 340px;
-   width: 100%;
-   text-align: center;
-
-			font-family: Arial, Helvetica, sans-serif; font-size: 15px; 
-			text-align: center;
-			color: #4f4f4f;
+  /*position: absolute; */
+    width: 50%;
+ 	font-family: Arial, Helvetica, sans-serif; font-size: 15px; 
+	color: #4f4f4f;
 		}
+
 h3 {
-	 position: absolute; 
-	top: 420px;
+	/* position: absolute; */
+	/*top: 800px;*/
 	width: 100%;
-	text-align: center;
-
-			font-family: Arial, Helvetica, sans-serif; font-size: 40px; 
-		
-			color: #4f4f4f;
+	font-family: Arial, Helvetica, sans-serif; font-size: 40px; 
+	color: #4f4f4f;
 		}
 
-		p {
-
-			  position: absolute; 
-			  width: 100%;
-   			top: 550px;
-text-align: center;
-
-			font-family: Arial, Helvetica, sans-serif; font-size: 10px; 
-		
-			color: white;
-			margin: 20px;
+p {
+    /*  position: absolute; */
+	width: 100%;
+   	top: 550px;
+	font-family: Arial, Helvetica, sans-serif; font-size: 10px; 
+	color: white;
+	margin: 20px;
 		}
 
 #slogan {
-	position: absolute; 
+	/*position: absolute; */
 	top: 300px;
 	width: 100%;
-	text-align: center;
-			font-family: Arial, Helvetica, sans-serif; font-size: 90px; 
-			text-align: center;
-			font-style: italic;
-			color: #4f4f4f;
-			
+	font-family: Arial, Helvetica, sans-serif; font-size: 90px; 
+	font-style: italic;
+	color: #4f4f4f;	
 		}
 
-
-		ul {
-    text-align: center;
-    list-style-type: none;
-      position: absolute; 
-			  width: 100%;
-   			top: 620px;
-   			color: white;
-   			font-family: Arial, Helvetica, sans-serif; font-size: 10px; 
+ul {
+ 	list-style-type: none;
+    /*  position: absolute; */
+	width: 100%;
+   	color: white;
+   	font-family: Arial, Helvetica, sans-serif; font-size: 10px; 
+   	text-align: left;
 }
 
-
-
-
-
-
-
 /* footer only*/
-
 #footer {
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 9px;
@@ -114,4 +118,6 @@ text-align: center;
 	color: #4f4f4f
 	padding-top: 5px;
 	padding-bottom: 5px;
-	padding-left: 5px;}
+	padding-left: 5px;
+
+}
