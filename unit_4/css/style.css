@@ -1,0 +1,219 @@
+/* Keep CSS code cleaner */
+
+/* resets browser default margin and padding (removes it) so y
+ou can go in and edit what you want -- ALWAYS ADD TO NEW WEBSITE 
+and then go back in and fix padding and margins the way  you want them!*/
+
+@import url('https://fonts.googleapis.com/css?family=Cormorant');
+@import url('https://fonts.googleapis.com/css?family=Signika');
+
+
+*{margin:0; padding:0; box-sizing:border-box;}
+
+
+header {
+	padding: 15px;
+}
+
+nav {
+	 line-height: 2em;
+	  padding: 0.5em 1em;
+ position: fixed;
+    display:inline;
+    right: 0;
+	text-decoration: none;
+	font-family: Arial, Helvetica, sans-serif;
+
+}
+
+nav a {
+		color: #4f4f4f;
+		margin-right: 5px;
+		}
+
+/* unvisited link */
+a:link {
+   text-decoration: none;
+   color: #4f4f4f;
+}
+
+/* visited link */
+a:visited {
+    text-decoration: none;
+    color: #4f4f4f;
+}
+
+/* mouse over link */
+a:hover {
+   text-decoration: none;
+   color: #d3d3d3;
+}
+
+/* selected link */
+a:active {
+    text-decoration: none;
+    color: #4f4f4f;
+}
+
+main{
+	background-color: e6e6fa;
+}
+
+section{
+	padding:px 0;
+}
+
+img #logo {
+	    position: fixed;
+    margin: 10px 15px 15px 10px;
+    left: 0;
+    display:inline;
+    padding-bottom: 15px;
+		}
+
+body {
+		background-image: url('../images/maybeCork.jpg');
+		text-align: center;
+		font-size: 16px; /*1em = 16px*/
+		color: white;
+		position: relative;
+		}
+
+#top-section {
+	background-image: url(../images/homepgstrip.jpg);
+ 	background-size: cover;
+ 	margin-bottom: 8px;
+
+}
+
+#top-section div {
+	padding: 1em 0;
+	width: 600px;/* leave this alone so nothing gets scrunched */
+	margin: 0 auto;
+	text-align: left;
+	margin-top: 10px;
+}
+
+hr {
+	margin-top: 4px;
+	margin-bottom: 4px;
+	height: 1px;
+	background-color: #4f4f4f;
+	border:none;
+	width: 100%;
+}
+
+/* fonts, headings and paragraphs */
+
+img #home_pg_middle{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+}
+
+h5 {
+  /*position: absolute; */
+    width: 50%;
+ 	font-family: 'Signika', sans-serif;
+ 	font-size: 12px; 
+	color: #4f4f4f;
+	margin-left: 100px;
+	}
+
+h4{	
+	width: 100%;
+	font-family: Arial, Helvetica, sans-serif; 
+	font-size: 12px; 
+	color: #d9d9d9;
+	text-align: auto;
+}
+
+h3 {
+	/* position: absolute; */
+	/*top: 800px;*/
+	width: 100%;
+	font-family: 'Signika', sans-serif;
+	font-size: 30px; 
+	color: #4f4f4f;
+	margin-left: 100px;
+	padding-bottom: 30px;
+	}
+
+h2 {
+	/* position: absolute; */
+	/*top: 800px;*/
+	width: 100%;
+	font-family: 'Signika', sans-serif;
+	font-size: 30px; 
+	color: #4f4f4f;
+	padding-top: 10px;
+	padding-bottom: 15px;
+	text-align: auto;
+	}
+
+
+#slogan {
+	/*position: absolute; */
+	top: 300px;
+	width: 100%;
+	font-family: 'Signika', sans-serif;
+	font-size: 50px; 
+	font-style: italic;
+	color: #4f4f4f;	
+	margin-left: 100px;
+	}
+
+p {
+			text-align: center;
+			font-family: 'Cormorant', serif;
+			font-size: 1em;
+			line-height:1.5em;
+			width: 35em; 
+ 			margin:1em auto;
+ 			color: white;
+		}
+
+
+ul {
+ 	list-style-type: none;
+    /*  position: absolute; */
+	width: 100%;
+   	color: white;
+   	font-family: Arial, Helvetica, sans-serif; font-size: 10px; 
+   	text-align: left;
+}
+
+main{
+	background-color: #404040;
+	color: #3C3C3C;
+	padding-top: 15px;
+	padding-bottom: .5px;
+	margin-top:8px
+}
+
+.artwork{
+	width:30em;
+	margin:2em;
+	background-color: #4f4f4f;
+
+}
+
+/* img #FPO {
+			align-content: left;
+			background-repeat: no-repeat;
+			margin-top: 5px;
+		}*/
+
+/* footer only*/
+#footer {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	font-style: normal;
+	color: #4f4f4f
+	padding-top: 15px;
+	padding-bottom: 5px;
+	padding-left: 5px;
+	align-content: left;
+	margin-top: 15px;
+}
