@@ -11,7 +11,19 @@ and then go back in and fix padding and margins the way  you want them!*/
 	padding:0; 
 	box-sizing:border-box;
 }
+/* need to have CSS look like the webpage -- 
+it needs to follow along - so as not to have duplicate CSS 
+code (which the lowest on the page will override that, that is on top of it)
+The body tag needs to go under the reset removal of margin/padding ----
+--- you will use more classes then ID's useally in your webpage.*/
 
+body {
+		background-image: url('../images/maybeCork.jpg');
+		text-align: center;
+		font-size: 16px; /*1em = 16px*/
+		color: white;
+		position: relative;
+		}
 
 header {
 	padding: 15px;
@@ -58,60 +70,11 @@ a:active {
 }
 
 main{
-	background-color: e6e6fa;
-}
-
-section{
-	padding:px 0;
-}
-
-img #logo {
-position: fixed;
-	margin: 2px 15px 15px 10px;
-   /* margin: 10px 15px 15px 10px;*/
-    left: 0;
-    display:inline;
-    padding-bottom: 15px;
-		}
-
-body {
-		background-image: url('../images/maybeCork.jpg');
-		text-align: center;
-		font-size: 16px; /*1em = 16px*/
-		color: white;
-		position: relative;
-		}
-
-#top-section {
-	background-image: url(../images/homepgstrip.jpg);
- 	background-size: cover;
- 	margin-bottom: 8px;
-}
-
-#top-section div {
-	padding: 1em 0;
-	width: 600px;/* leave this alone so nothing gets scrunched */
-	margin: 0 auto;
-	text-align: left;
-	margin-top: 10px;
-}
-
-hr {
-	margin-top: 4px;
-	margin-bottom: 4px;
-	height: 1px;
-	background-color: #4f4f4f;
-	border:none;
-	width: 100%;
-}
-
-/* fonts, headings and paragraphs */
-
-img #home_pg_middle{
-    position: relative;
-    width: 100%;
-    height: 100%;
-    background-repeat: no-repeat;
+	background-color: #404040;
+	color: #3C3C3C;
+	padding-top: 15px;
+	padding-bottom: .5px;
+	margin-top:8px
 }
 
 h6 {
@@ -121,7 +84,6 @@ h6 {
  	font-size: 9px; 
 	color: #4f4f4f;
 	}
-
 
 h5 {
   /*position: absolute; */
@@ -163,17 +125,14 @@ h2 {
 	text-align: auto;
 	}
 
-
-#slogan {
-	/*position: absolute; */
-	top: 300px;
+hr {
+	margin-top: 4px;
+	margin-bottom: 4px;
+	height: 1px;
+	background-color: #4f4f4f;
+	border:none;
 	width: 100%;
-	font-family: 'Signika', sans-serif;
-	font-size: 50px; 
-	font-style: italic;
-	color: #4f4f4f;	
-	margin-left: 100px;
-	}
+}
 
 p {
 			text-align: center;
@@ -196,13 +155,49 @@ ul {
    	text-align: left;
 }
 
-main{
-	background-color: #404040;
-	color: #3C3C3C;
-	padding-top: 15px;
-	padding-bottom: .5px;
-	margin-top:8px
+#logo {
+
+	margin: 2px 15px 15px 10px;
+   /* margin: 10px 15px 15px 10px;*/
+    left: 0;
+    display:inline;
+    padding-bottom: 15px;
+		}
+
+#top-section {
+	background-image: url(../images/homepgstrip.jpg);
+ 	background-size: cover;
+ 	margin-bottom: 8px;
 }
+
+#top-section div {
+	padding: 1em 0;
+	width: 600px;/* leave this alone so nothing gets scrunched */
+	margin: 0 auto;
+	text-align: left;
+	margin-top: 10px;
+}
+
+/* fonts, headings and paragraphs */
+
+#home_pg_middle{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+}
+
+#slogan {
+	/*position: absolute; */
+	top: 300px;
+	width: 100%;
+	font-family: 'Signika', sans-serif;
+	font-size: 50px; 
+	font-style: italic;
+	color: #4f4f4f;	
+	margin-left: 100px;
+	}
+
 
 .artwork{
 	width:30em;
@@ -220,7 +215,6 @@ main{
 
 /* footer only*/
 .copyright {
-
     text-align: left;
 }
 
