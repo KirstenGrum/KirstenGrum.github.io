@@ -1,0 +1,250 @@
+/* Keep CSS code cleaner */
+
+@import url('https://fonts.googleapis.com/css?family=Cormorant');
+@import url('https://fonts.googleapis.com/css?family=Signika');
+
+/* resets browser default margin and padding (removes it) so y
+ou can go in and edit what you want -- ALWAYS ADD TO NEW WEBSITE 
+and then go back in and fix padding and margins the way  you want them!*/
+*{
+	margin:0; 
+	padding:0; 
+	box-sizing: border-box;
+}
+/* need to have CSS look like the webpage -- 
+it needs to follow along - so as not to have duplicate CSS 
+code (which the lowest on the page will override that, that is on top of it)
+The body tag needs to go under the reset removal of margin/padding ----
+--- you will use more classes then ID's useally in your webpage.*/
+
+body {
+		/* background-image: url('../images/maybeCork.jpg');*/
+		text-align: center;
+		font-size: 16px; /*1em = 16px*/
+		background-color: #f3f3f3;
+		position: relative;
+		}
+
+header {
+	padding: 15px;
+	background-color: white;
+}
+
+
+nav {
+	/*line-height: 2em;*/
+	 padding: 20px;
+	text-align: inherit;
+	font-size: 12px;
+ 	/*position: absolute;
+ 	 position: fixed; made it scroll with rest of screen - did notwantthat 
+    display:inline;*/
+   
+	text-decoration: none;
+	font-family: 'Signika', sans-serif;
+}
+
+#centerNav {
+	padding-bottom: 20px;
+	text-align: auto;
+}
+
+nav a {
+	padding:10px;
+	float: right; 
+	text-decoration: none;
+		}
+
+
+
+/* unvisited link */
+a:link {
+   text-decoration: none;
+   color: #4f4f4f;
+}
+
+/* mouse over link */
+a:hover {
+   text-decoration: none;
+   color: #d3d3d3;
+}
+
+#navlogo {
+	align-content: left;
+	display: inline-block;		
+}	
+
+
+main{
+	width: auto;
+	background-color: #d3d3d3;
+	padding-top: 15px;
+	padding-bottom: .5px;
+	margin-top:2px
+}
+
+h6 {
+  /*position: absolute; */
+    width: 50%;
+ 	font-family: 'Signika', sans-serif;
+ 	font-size: 9px; 
+	color: #4f4f4f;
+	}
+
+h5 {
+  /*position: absolute; */
+    width: 50%;
+ 	font-family: 'Signika', sans-serif;
+ 	font-size: 12px; 
+	color: #4f4f4f;
+	margin-left: 100px;
+	}
+
+h4{	
+	width: 100%;
+	font-family: 'Signika', sans-serif; 
+	font-size: 12px; 
+	color: #d9d9d9;
+	text-align: auto;
+}
+
+h3 {
+	/* position: absolute; */
+	/*top: 800px;*/
+	width: 100%;
+	font-family: 'Signika', sans-serif;
+	font-size: 30px; 
+	color: #4f4f4f;
+	margin-left: 100px;
+	padding-bottom: 30px;
+	}
+
+h2 {
+	/* position: absolute; */
+	/*top: 800px;*/
+	width: 100%;
+	font-family: 'Signika', sans-serif;
+	font-size: 30px; 
+	color: #4f4f4f;
+	padding-top: 10px;
+	padding-bottom: 15px;
+	text-align: auto;
+	}
+/* hr {
+	margin-top: 4px;
+	margin-bottom: 4px;
+	height: 1px;
+	background-color: #4f4f4f;
+	border:none;
+	width: 10%;
+}*/
+
+section{
+	padding:50px 0;
+}
+
+p {
+			text-align: center;
+			font-family: 'Cormorant', serif;
+			font-size: 1em;
+			line-height:1.5em;
+			width: 25em; 
+ 			margin:1em auto;
+ 			color: white;
+		}
+
+
+ul {
+ 	list-style-type: none;
+    /*  position: absolute; */
+	width: 100%;
+   	color: white;
+   	font-family: 'Signika', sans-serif; 
+   	font-size: 10px; 
+   	text-align: left;
+}
+
+
+
+#text_on_top_of_main_image_in_header {
+	background-image: url(../images/homepgstrip.jpg);
+ 	background-size: cover;
+ 	margin-bottom: 8px;
+ 	background-color: white;
+}
+
+#text_on_top_of_main_image_in_header div {
+	padding: 1em 0;
+	width: 600px;/* leave this alone so nothing gets scrunched */
+	margin: 0 auto;
+	text-align: left;
+	margin-top: 10px;
+}
+
+/* fonts, headings and paragraphs */
+
+#home_pg_middle{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+}
+
+#slogan {
+	/*position: absolute; */
+	top: 300px;
+	width: 100%;
+	font-family: 'Signika', sans-serif;
+	font-size: 50px; 
+	font-style: italic;
+	color: #4f4f4f;	
+	margin-left: 100px;
+	}
+
+/* this is a class in html*/
+
+
+
+.artwork{
+	width:30em;
+	/*margin:2em;*/
+	/*background-color: #4f4f4f;*/
+	padding-top: 0px;
+	padding-bottom: 30px;
+	padding-right: 0px;
+	margin:2em auto;
+	background-color: #4f4f4f;
+}
+
+/* img #FPO {
+			align-content: left;
+			background-repeat: no-repeat;
+			margin-top: 5px;
+		}*/
+
+/* footer only*/
+.copyright {
+    text-align: left;
+}
+
+footer {
+	font-family: 'Signika', sans-serif;
+	/*font-size: 9px;*/
+	color: #4f4f4f
+	padding: 20px;
+	align-content: left;}
+
+.clearfix:after {
+display: block;
+content: " ";
+clear: both;
+
+height: 0;
+font-size: 0;
+visibility; hidden;
+text-align: center;
+}
+
+#wrapper {
+	width: auto;
+}
