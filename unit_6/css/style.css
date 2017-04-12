@@ -5,12 +5,12 @@
 
 /* resets browser default margin and padding (removes it) so y
 ou can go in and edit what you want -- ALWAYS ADD TO NEW WEBSITE 
-and then go back in and fix padding and margins the way  you want them! a
+and then go back in and fix padding and margins the way  you want them! 
 -- the bottom line means: calculation for padding and widths*/
 *{
 	margin:0; 
 	padding:0; 
-	box-sizing:border-box;
+	box-sizing: border-box;
 }
 /* need to have CSS look like the webpage -- 
 it needs to follow along - so as not to have duplicate CSS 
@@ -29,10 +29,10 @@ body {
 header {
 	background-color: #FFED74;
 	border: 1px black solid;
-	padding: 15px;
+	padding: 30px;
 }
 
-nav {
+nav { 
 	background-color: #E8C66A;
     border: 1px black solid;
     padding: 20px;
@@ -40,7 +40,6 @@ nav {
 	line-height: 2em;
 	padding: 0.5em 1em;
  	position: absolute;
- 	/* position: fixed; made it scroll with rest of screen - did notwantthat */
     display:inline;
     right: 0;
 	text-decoration: none;
@@ -90,20 +89,27 @@ hr {
 	width: 100%;
 }
 
+img {
+	width: 100%;
+}
+
 p {
-			text-align: center;
-			font-family: 'Cormorant', serif;
-			font-size: 1em;
-			line-height:1.5em;
-			width: 25em; 
- 			margin:1em auto;
- 			color: white;
+	text-align: center;
+	font-family: 'Cormorant', serif;
+	font-size: 16px;
+	line-height:1.5em;
+	width: 25em; 
+ 	color: white;
+	width:100%;
+margin-left:1px;
+
+	
+	
 		}
 
 
 ul {
  	list-style-type: none;
-    /*  position: absolute; */
 	width: 100%;
    	color: white;
    	font-family: 'Signika', sans-serif; 
@@ -111,12 +117,14 @@ ul {
    	text-align: left;
 }
 
+
 #logo {
 	margin: 2px 15px 15px 10px;
-   /* margin: 10px 15px 15px 10px;*/
     left: 0;
     display:inline;
-    padding-bottom: 15px;
+    
+    width: 190px;
+    height: 32px;
 		}
 
 #top-section {
@@ -134,7 +142,6 @@ ul {
 #home_pg_middle{
 	 background-color: #FFE2B8;
     border: 1px black solid;
-   
     position: relative;
     width: 100%;
     height: 100%;
@@ -181,22 +188,18 @@ ul {
 }
 
 .nav-middle {
-	
 	width:30em;
-	/*margin:2em;*/
-	/*background-color: #4f4f4f;*/
-
 	margin-bottom: 60px;
 }
 
 .artwork{
 	background-color: #FFE2B8;
     border: 1px black solid;
-	width:30em;
-	/*margin:2em;*/
-	/*background-color: #4f4f4f;*/
-	padding:50px;
-	margin: auto;
+	width: 33.333%;
+	padding: 25px;
+	float: left;
+	
+	word-break:break-all;
 }
 
 
@@ -219,8 +222,19 @@ footer {
     border: 1px black solid;
 }
 
+.clearfix:after {
+content: " ";
+display: block;
+clear: both;
+height: 0;
+	font-size: 0;
+	visibility; hidden;
+}
+
 .wrapper {
 background-position: center;
 	margin: auto;
 	position: relative;
 }
+
+
