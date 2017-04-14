@@ -23,15 +23,14 @@ body {
 	line-height:14px;
     background-color: #f3f3f3;
     /*margin: 0 auto;*/
-	overflow:scroll;
 	text-align: center;
 		}
 
 header {
-	height: 45px;
+	height: 60px;
 	/*height: 120px;
 	margin:0px auto 55px auto;*/
-	margin:0px auto 40px auto;
+	margin: 10px auto 30px auto;
 	border-bottom:solid 1px #ababab;
 	background-color: #f3f3f3;
 	position:relative;
@@ -43,11 +42,9 @@ header img{
 }
 
 nav { 
- 	position: absolute;
-    display:inline;
+    display:inline-block;
 	font-family: 'Signika', sans-serif;*/
 }
-
 
 nav a {
 	text-decoration: none;
@@ -58,61 +55,52 @@ nav a {
 a:hover {
    color: #5fbbc6; /* blue in logo */
 }
+
 a {
 	text-decoration:none;
 	color: #6B6665;
     }
 
 .navigation1 {
-
-    font-size: 1.1em;
-    text-align: right;
-    text-transform: uppercase;
-	display:inline-block;
-	position:absolute;
-	right:3%;
-	top:40%;
-	z-index:1000;
-	height: 50px;
-    margin:0 5px 0 15px;
+   float:right;
 	}
 
 .navigation1 a {
-	margin:0 5px 0 15px;
-	height: 50px;
-    display: inline;
+	font-size: 12px;
+	text-transform: uppercase;
+	text-decoration: none;
+	padding: 16px 8px 0 17px;
+	float:left;
 	}
-		
 
 .navigation2 {
 	text-align:center;	
-	display: inline;
+	display:inline-block;
     height: 65px;
 	text-align:center;	
 	margin-top:30px;
 	color: #6B6665;
+	float: none;
 	}
 	
 .navigation2 a {
-	font-size:1em;
+	font-size: 12px;
 	text-transform:uppercase;
 	letter-spacing:2px;
-	font-weight:normal;
 	line-height: 40px;
 	text-decoration: none;
-	margin:0 7px 0 7px;
-	padding:10px 0;
+	margin:0 8px 0 8px;
+	
 	}
 
 .nav-middle {
-	width: 80%;
-	margin-bottom: 60px;
+	width: 100%;
+	margin-bottom: -30px;
 	text-align: center;
 	position: relative;
 }
 
 main{
-	background-color: transparent;
 	color: #3C3C3C;
 	padding-top: 15px;
 	padding-bottom: .5px;
@@ -125,7 +113,6 @@ h1, h2, h3, h4, h5, h6, p {
 	padding-right: 15px;
 	padding-left: 15px; /* adding the padding to the sides of the elements within the divs, instead of the divs themselves, gets rid of any box model math. A nested div with side padding can also be used as an alternate method. */
 }
-
 
 img {
 	width: 100%;
@@ -142,22 +129,9 @@ p {
 	margin-left:1px;
 }
 
-
-ul {
- 	list-style-type: none;
-	width: 100%;
-   	color: white;
-   	font-family: 'Signika', sans-serif; 
-   	font-size: 10px; 
-   	text-align: left;
-}
-
-
 #logo {
-	margin: 2px 15px 15px 10px;
+	margin: auto;
    	display:inline;
-  	width: 190px;
- 	float: left;
 	}
 
 #top-section {
@@ -177,8 +151,7 @@ ul {
 	height: 6px;
 	padding-top: 100px;
 	padding-bottom: 65px;
-	padding-left: 5px;
-
+	padding-left: 10px;
 }
 
 #port-wordsBig {
@@ -200,13 +173,8 @@ ul {
 	font-size: 50px;
 	color: #FFFFFF;
 	width: 600px;
-	padding-left: 5px;
-
+	padding-left: 10px;
 }
-
-
-
-
 
 .artwork{
 	width: 33.333%;
@@ -215,13 +183,10 @@ ul {
 	margin: auto;
 }
 
-
-
 /* footer only*/
 .copyright {
     text-align: left;
 }
-
 
 footer {
 	font-family: 'Signika', sans-serif;
