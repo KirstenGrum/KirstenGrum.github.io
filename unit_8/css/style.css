@@ -1,0 +1,294 @@
+/* Keep CSS code cleaner */
+
+@import url('https://fonts.googleapis.com/css?family=Cormorant');
+@import url('https://fonts.googleapis.com/css?family=Signika');
+
+/* resets browser default margin and padding (removes it) so y
+ou can go in and edit what you want -- ALWAYS ADD TO NEW WEBSITE 
+and then go back in and fix padding and margins the way  you want them! 
+-- the bottom line means: calculation for padding and widths*/
+*{
+	margin:0; 
+	padding:0; 
+	box-sizing: border-box;
+}
+/* need to have CSS look like the webpage -- 
+it needs to follow along - so as not to have duplicate CSS 
+code (which the lowest on the page will override that, that is on top of it)
+The body tag needs to go under the reset removal of margin/padding ----
+--- you will use more classes then ID's useally in your webpage.*/
+
+body {
+	font-size: 16px;
+	line-height:14px;
+    background-color: #f3f3f3;
+	text-align: center;
+		}
+
+header {
+	height: 60px;
+	margin: 10px auto 30px auto;
+	border-bottom:solid 1px #ababab;
+	background-color: #f3f3f3;
+	position:relative;
+}
+
+header img{
+	float:left;
+	width: 190px;
+}
+
+nav { 
+    display:inline-block;
+	font-family: 'Signika', sans-serif;
+}
+
+nav a {
+	text-decoration: none;
+	color: #6B6665;
+		}
+
+/* mouse over link */
+a:hover {
+   color: #5fbbc6; /* blue in logo */
+}
+
+a {
+	text-decoration:none;
+	color: #6B6665;
+    }
+
+.navigation1 {
+   float:right;
+	}
+
+.navigation1 a {
+	font-size: 16px;
+	text-transform: uppercase;
+	text-decoration: none;
+	padding: 16px 8px 0 17px;
+	float:left;
+	}
+
+.navigation2 {
+	text-align:center;	
+	display:inline-block;
+    height: 65px;
+	text-align:center;	
+	margin-top:30px;
+	color: #6B6665;
+	float: none;
+	}
+	
+.navigation2 a {
+	font-size: 16px;
+	text-transform:uppercase;
+	letter-spacing:2px;
+	line-height: 40px;
+	text-decoration: none;
+	margin:0 8px 0 8px;
+	
+	}
+
+.nav-middle {
+	width: 100%;
+	margin-bottom: -30px;
+	text-align: center;
+	position: relative;
+}
+
+main{
+	color: #3C3C3C;
+	padding-top: 15px;
+	padding-bottom: .5px;
+	margin-top:8px
+}
+
+h1, h2, h3, h4, h5, h6, p {
+	font-family: 'Signika', sans-serif;
+	margin-top: 0;	 /* removing the top margin gets around an issue where margins can escape from their containing div. The remaining bottom margin will hold it away from any elements that follow. */
+	padding-right: 15px;
+	padding-left: 15px; /* adding the padding to the sides of the elements within the divs, instead of the divs themselves, gets rid of any box model math. A nested div with side padding can also be used as an alternate method. */
+}
+
+img {
+	width: 100%;
+}
+
+p {
+	text-align: center;
+	font-family: 'Cormorant', serif;
+	font-size: 16px;
+	line-height:1.5em;
+	width: 25em; 
+ 	color: white;
+	width:100%;
+	margin-left:1%;
+}
+
+#logo {
+	margin: auto;
+   	display:inline;
+	}
+
+#top-section { /*blue box*/
+	background-color: #5fbbc6;
+ 	margin-bottom: auto;
+ 	height: 425px;
+ 	text-align: left;
+}
+
+#welcTXT {
+	font-family: 'Signika', sans-serif;
+	font-size: 35px;
+	color: #4f4f4f;
+	text-align: left;
+	height: 6px;
+	padding-top: 100px;
+	padding-bottom: 65px;
+	padding-left: 10px;
+}
+
+#port-wordsBig {
+	padding: 40px 90px;
+	font-family: 'Signika', sans-serif;
+	font-size: 125px;
+	color: #4f4f4f;
+	text-align: left;
+	width: 800px;
+	margin-top: : auto;
+}
+
+#points {
+	padding: 60px 0;
+	font-family: 'Signika', sans-serif;
+	font-size: 50px;
+	color: #FFFFFF;
+	width: 600px;
+	padding-left: 10px;
+}
+
+.artwork{
+	width: 33.333%;
+	padding: 10px;
+	float: left;
+	margin: auto;
+}
+
+.copyright {
+    text-align: left;
+}
+
+footer {
+	font-family: 'Signika', sans-serif;
+	font-size: 10px;
+	color: #6B6665;
+	height:	20px;
+	margin:	10px auto 10px auto;
+	border-top:solid 1px #ababab;
+	padding-top: 5px;
+	position:relative;
+	align-content: left;
+    text-decoration: none;
+}
+
+.clearfix:after {
+	content: " ";
+	display: block;
+	height: 0;
+	font-size: 0;
+	visibility: hidden;
+	clear: both;
+}
+
+.wrapper {
+	max-width: 1080px;
+	background-position: center;
+	margin: auto;
+	position: relative;
+}
+
+
+/* -------------- RESPONSIVE DESIGN --------------- */
+
+@media screen and (max-width: 1024px){
+
+	header {
+		margin: 10px auto 35px auto;
+		max-width:97%;
+		}
+
+	#top-section { /*blue box*/
+ 		margin-top: 60px;
+		}
+
+	footer {
+		width:100%;	
+		max-width:97%;
+		}	
+	}
+
+
+@media screen and (max-width: 768px){
+
+	.artwork{
+		width: 50%;
+		padding: .80%;
+		}
+
+}
+
+
+@media screen and (max-width: 640px){
+
+	header {
+	max-width:95%;
+	margin:0px auto 35px auto;
+	border-bottom: 0px;
+	}
+
+	header img{
+	float: none;
+	width: 190px;
+	padding-bottom: 15px;
+	}
+
+	.navigation1 {
+   float:none;
+	}
+
+#top-section { /*blue box*/
+ 	height: 70%;
+}
+
+#welcTXT {
+	font-size: 25%;
+	padding-top: 100px;
+	padding-bottom: 40px;
+	padding-left: 5px;
+}
+
+#port-wordsBig {
+	padding: 40px 30px;
+	font-size: 420%;
+	width: 100%;
+	margin-top: : auto;
+}
+
+#points {
+	padding: 30px 0;
+	font-size: 40%;
+	width: auto;
+	padding-left: 5px;
+}
+
+footer {
+	text-align: center;
+}
+
+
+}
+
+
+
+
