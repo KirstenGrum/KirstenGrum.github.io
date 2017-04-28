@@ -20,11 +20,11 @@ The body tag needs to go under the reset removal of margin/padding ----
 
 body {
 	font-size: 16px;
-	line-height:14px;
-    background-color: #f3f3f3;
+	font-family: 'Signika', sans-serif;
+	line-height: 1.3;
+	background-color: #f3f3f3;
 	text-align: center;
-		}
-
+}
 header {
 	height: 60px;
 	margin: 10px auto 30px auto;
@@ -40,13 +40,12 @@ header img{
 
 nav { 
     display:inline-block;
-	font-family: 'Signika', sans-serif;
 }
 
 nav a {
 	text-decoration: none;
 	color: #6B6665;
-		}
+}
 
 /* mouse over link */
 a:hover {
@@ -56,17 +55,16 @@ a:hover {
 a {
 	text-decoration:none;
 	color: #6B6665;
-    }
-
+}
 .navigation1 {
    float:right;
-	}
+}
 
 .navigation1 a {
 	font-size: 16px;
 	text-transform: uppercase;
 	text-decoration: none;
-	padding: 16px 8px 0 17px;
+	padding: 1em;
 	float:left;
 	}
 
@@ -97,18 +95,11 @@ a {
 	position: relative;
 }
 
-main{
+#gallery {
 	color: #3C3C3C;
 	padding-top: 15px;
 	padding-bottom: .5px;
 	margin-top:8px
-}
-
-h1, h2, h3, h4, h5, h6, p {
-	font-family: 'Signika', sans-serif;
-	margin-top: 0;	 /* removing the top margin gets around an issue where margins can escape from their containing div. The remaining bottom margin will hold it away from any elements that follow. */
-	padding-right: 15px;
-	padding-left: 15px; /* adding the padding to the sides of the elements within the divs, instead of the divs themselves, gets rid of any box model math. A nested div with side padding can also be used as an alternate method. */
 }
 
 img {
@@ -120,10 +111,9 @@ p {
 	font-family: 'Cormorant', serif;
 	font-size: 16px;
 	line-height:1.5em;
-	width: 25em; 
- 	color: white;
+	width: 25em;
+	color: white;
 	width:100%;
-	margin-left:1%;
 }
 
 #logo {
@@ -133,63 +123,55 @@ p {
 
 #top-section { /*blue box*/
 	background-color: #5fbbc6;
- 	margin-bottom: auto;
- 	height: 425px;
- 	text-align: left;
-}
-
-#welcTXT {
-	font-family: 'Signika', sans-serif;
-	font-size: 35px;
 	color: #4f4f4f;
+	margin-bottom: auto;
 	text-align: left;
-	height: 6px;
-	padding-top: 100px;
-	padding-bottom: 65px;
-	padding-left: 10px;
+	padding: 8em;
+}
+#top-section span {
+	display:block;
+}
+#welcTXT {
+	font-size: 35px;
+}
+#bigTXT {
+	font-size:125px;
+	margin-left: -8px;
 }
 
 #port-wordsBig {
-	padding: 40px 90px;
-	font-family: 'Signika', sans-serif;
-	font-size: 125px;
-	color: #4f4f4f;
-	text-align: left;
-	width: 800px;
-	margin-top: : auto;
+	/* font-size: 125px; */
+	line-height: .8;
 }
 
 #points {
-	padding: 60px 0;
 	font-family: 'Signika', sans-serif;
 	font-size: 50px;
 	color: #FFFFFF;
-	width: 600px;
-	padding-left: 10px;
+	text-align: left;
 }
 
 .artwork{
 	width: 33.333%;
-	padding: 10px;
+	padding: .5em;
 	float: left;
-	margin: auto;
 }
 
 .copyright {
     text-align: left;
+    font-size: .75em;
 }
 
 footer {
 	font-family: 'Signika', sans-serif;
-	font-size: 10px;
 	color: #6B6665;
-	height:	20px;
+	/* height:	20px; */
 	margin:	10px auto 10px auto;
 	border-top:solid 1px #ababab;
 	padding-top: 5px;
 	position:relative;
 	align-content: left;
-    text-decoration: none;
+	text-decoration: none;
 }
 
 .clearfix:after {
@@ -286,8 +268,6 @@ footer {
 	text-align: center;
 }
 
-
-}
 
 
 
