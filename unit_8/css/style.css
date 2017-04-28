@@ -214,7 +214,7 @@ footer {
 @media screen and (max-width: 768px){
 
 	#top-section { /*blue box*/
-		padding-left: 4em;
+		padding-left: 2.5em;
 	}
 
 	#welcTXT {
@@ -223,6 +223,7 @@ footer {
 
 	#bigTXT {
 		font-size: 78px;
+		margin-left: -4px;
 	}
 
 	#points {
@@ -250,6 +251,7 @@ footer {
 		float: none;
 		width: 190px;
 		padding-bottom: 15px;
+		padding-top: 10px;
 	}
 
 	.navigation1 {
