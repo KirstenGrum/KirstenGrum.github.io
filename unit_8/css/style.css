@@ -209,23 +209,6 @@ footer {
 }
 
 
-/* -------------- laptop-med/sm  --------------- */
-
-@media screen and (max-width: 870px){
-
-	#welcTXT {
-		font-size: 28px;
-	}
-
-	#bigTXT {
-		font-size: 100px;
-	}
-
-	#points {
-		font-size: 42.5px;
-	}
-
-}
 /* -------------- tablets/sm  --------------- */
 
 @media screen and (max-width: 768px){
@@ -255,7 +238,7 @@ footer {
 
 /* -------------- phone larger  --------------- */
 
-@media screen and (max-width: 576px){
+@media screen and (max-width: 640px){
 
 	header {
 		max-width:95%;
@@ -305,25 +288,6 @@ footer {
 
 }
 
-/* -------------- phone sm--------------- */
 
-@media screen and (max-width: 321px){
-
-	#top-section { /*blue box*/
-		padding-left: 1em;
-	}
-
-	#welcTXT {
-		font-size: 16px;
-	}
-
-	#bigTXT {
-		font-size: 57px;
-		margin-left: -2px;
-	}
-
-	#points {
-		font-size: 24px;
-	}
 
 }
