@@ -107,11 +107,11 @@ img {
 }
 
 p {
-	text-align: center;
+	text-align: left;
 	font-family: 'Cormorant', serif;
 	font-size: 16px;
 	line-height:1.5em;
-	width: 20px; 
+	width: 100%; 
  	color: white;
 }
 
@@ -197,14 +197,6 @@ footer {
 
 @media screen and (max-width: 1024px){
 
-	header {
-		margin: 10px auto 35px auto;
-		max-width:97%;
-	}
-
-	#top-section { /*blue box*/
- 		margin-top: 60px;
-	}
 }
 
 
@@ -212,80 +204,21 @@ footer {
 
 @media screen and (max-width: 768px){
 
-	#top-section { /*blue box*/
-		padding-left: 2.5em;
-	}
-
-	#welcTXT {
-		font-size: 21px;
-	}
-
-	#bigTXT {
-		font-size: 78px;
-		margin-left: -4px;
-	}
-
-	#points {
-		font-size: 33px;
-	}
-
-	.artwork{
-		width: 50%;
-		padding: .80%;
-	}
-
 }
+
 
 /* -------------- phone larger  --------------- */
 
 @media screen and (max-width: 640px){
 
-	header {
-		max-width:95%;
-		margin:0px auto 35px auto;
-		border-bottom: 0px;
-	}
-
-	header img{
-		float: none;
-		width: 190px;
-		padding-bottom: 15px;
-		padding-top: 10px;
-	}
-
-	.navigation1 {
-   		float:none;
-	}
-
-	#welcTXT {
-		font-size: 18px;
-	}
-
-	#bigTXT {
-		font-size: 70px;
-	}
-
-	#points {
-		font-size: 30px;
-	}
 }
+
+
 
 /* -------------- phone sm--------------- */
 
 @media screen and (max-width: 480px){
-
-	#welcTXT {
-		font-size: 16px;
-	}
-
-	#bigTXT {
-		font-size: 60px;
-		margin-left: -4px;
-	}
-
-	#points {
-		font-size: 25px;
-	}
-
+	
 }
+
 
