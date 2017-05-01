@@ -255,12 +255,13 @@ footer {
 	margin:20px 0;
 	}
 
+
 	.navigation1 {
     float: none;
 	width:100%;
     text-align: center;
-	margin: -8px 0;
-	
+	padding-top: -10px;
+	padding-left: 50px;
 	}
 
 	#top-section { /*blue box*/
@@ -294,7 +295,7 @@ footer {
 @media screen and (max-width: 480px){
 
 	header img{
-	width: 40%;
+	width: 45%;
 	}
 
 	#top-section { /*blue box*/
@@ -307,7 +308,7 @@ footer {
 
 	#bigTXT {
 		font-size: 40px;
-		margin-left: -4px;
+		margin-left: -2px;
 	}
 
 	#points {
@@ -317,7 +318,6 @@ footer {
 	.navigation2 a {
 	letter-spacing: 1px;
 	line-height: 25px;
-	
 	margin-left: -4px;
 	}
 
