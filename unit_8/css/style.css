@@ -317,15 +317,15 @@ footer {
 	.navigation2 a {
 	letter-spacing: 1px;
 	line-height: 25px;
-	padding: 12px;
+	
 	margin-left: -4px;
 	}
 
 	.nav-middle {
 	font-size: 12px;
 	width: 100%;
-	margin-bottom: -50px;
-	text-align: left;
+	margin-bottom: -45px;
+	text-align: center;
 	}
 	
 	.artwork{
