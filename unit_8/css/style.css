@@ -27,7 +27,7 @@ body {
 
 header {
 	height: 60px;
-	margin: 10px auto 30px auto;
+	margin:0px auto 55px auto;
 	border-bottom:solid 1px #ababab;
 	background-color: #f3f3f3;
 	position:relative;
@@ -52,6 +52,10 @@ a:hover {
    color: #5fbbc6; /* blue in logo */
 }
 
+a:active {
+	color: #5fbbc6; 
+}
+
 a {
 	text-decoration:none;
 	color: #6B6665;
@@ -72,8 +76,7 @@ a {
 .navigation2 {
 	text-align:center;	
 	display:inline-block;
-    height: 65px;
-	text-align:center;	
+    height: 65px;	
 	margin-top:30px;
 	color: #6B6665;
 	float: none;
@@ -125,21 +128,23 @@ p {
 	color: #4f4f4f;
 	margin-bottom: auto;
 	text-align: left;
-	padding: 8em;
+	padding: 4em;
 }
+
 #top-section span {
 	display:block;
 }
+
 #welcTXT {
 	font-size: 35px;
 }
+
 #bigTXT {
 	font-size:125px;
 	margin-left: -8px;
 }
 
 #port-wordsBig {
-	/* font-size: 125px; */
 	line-height: .8;
 }
 
@@ -204,12 +209,81 @@ footer {
 
 @media screen and (max-width: 768px){
 
+	.artwork{
+		width: 50%;
+	}
+
+	#top-section { /*blue box*/
+		padding: 3.5em;
+	}
+
+	#welcTXT {
+		font-size: 25px;
+	}
+
+	#bigTXT {
+		font-size: 90px;
+		margin-left: -4px;
+	}
+
+	#points {
+		font-size: 34px;
+	}
+
 }
 
 
 /* -------------- phone larger  --------------- */
 
 @media screen and (max-width: 640px){
+
+	header {
+	width:100%;	
+	border-bottom:0;
+	margin:0px auto 25px auto;
+	height: 90px;
+	}
+
+	header img {
+		padding-top: 15px;
+		padding-bottom: 15px;
+	   text-align: center; 
+	}
+
+	#logo {
+	text-align:center;
+	margin:20px 0;
+	}
+
+	.navigation1 {
+    float: none;
+	width:100%;
+    text-align: center;
+	margin: -8px 0;
+	
+	}
+
+	#top-section { /*blue box*/
+		padding: 3.5em;
+	}
+
+	#welcTXT {
+		font-size: 18px;
+	}
+
+	#bigTXT {
+		font-size: 70px;
+		margin-left: -4px;
+	}
+
+	#points {
+		font-size: 30px;
+	}
+
+	#wrapper {
+		width: 96%;
+
+	}
 
 }
 
@@ -218,7 +292,51 @@ footer {
 /* -------------- phone sm--------------- */
 
 @media screen and (max-width: 480px){
+
+	header img{
+	width: 40%;
+	}
+
+	#top-section { /*blue box*/
+		padding: 2em;
+	}
+
+	#welcTXT {
+		font-size: 16px;
+	}
+
+	#bigTXT {
+		font-size: 40px;
+		margin-left: -4px;
+	}
+
+	#points {
+		font-size: 17px;
+	}
+
+	.navigation2 a {
+	letter-spacing: 1px;
+	line-height: 25px;
+	padding: 12px;
+	margin-left: -4px;
+	}
+
+	.nav-middle {
+	font-size: 12px;
+	width: 100%;
+	margin-bottom: -50px;
+	text-align: left;
+	}
 	
+	.artwork{
+		width: 100%;
+	}
+
+	.copyright {
+    text-align: center;
+    font-size: 9px;
+    padding-left: 0px;
+	}
 }
 
 
