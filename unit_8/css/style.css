@@ -23,11 +23,12 @@ body {
 	font-family: 'Signika', sans-serif;
 	line-height:14px;
     background-color: #f3f3f3;
+    text-align: center;
 		}
 
 header {
 	height: 60px;
-	margin:0px auto 55px auto;
+	margin: 10px auto 30px auto;
 	border-bottom:solid 1px #ababab;
 	background-color: #f3f3f3;
 	position:relative;
@@ -238,30 +239,22 @@ footer {
 @media screen and (max-width: 640px){
 
 	header {
-	width:100%;	
-	border-bottom:0;
-	margin:0px auto 25px auto;
-	height: 90px;
+	max-width:95%;
+	margin:0px auto 35px auto;
+	border-bottom: 0px;
 	}
 
-	header img {
-		padding-top: 15px;
-		padding-bottom: 15px;
-	   text-align: center; 
+	header img{
+	float: none;
+	padding-bottom: 20px;
 	}
-
-	#logo {
-	text-align:center;
-	margin:20px 0;
-	}
-
 
 	.navigation1 {
-    float: none;
-	width:100%;
-    text-align: center;
-	padding-top: -10px;
-	padding-left: 50px;
+   float:none;
+	}
+
+	.navigation1 a {
+	float: none;
 	}
 
 	#top-section { /*blue box*/
@@ -294,9 +287,7 @@ footer {
 
 @media screen and (max-width: 480px){
 
-	header img{
-	width: 45%;
-	}
+	
 
 	#top-section { /*blue box*/
 		padding: 2em;
