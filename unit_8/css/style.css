@@ -23,12 +23,12 @@ body {
 	font-family: 'Signika', sans-serif;
 	line-height:14px;
     background-color: #f3f3f3;
-    text-align: center;
+
 		}
 
 header {
 	height: 60px;
-	margin: 10px auto 30px auto;
+	margin:0px auto 55px auto;
 	border-bottom:solid 1px #ababab;
 	background-color: #f3f3f3;
 	position:relative;
@@ -74,7 +74,7 @@ a {
 	float:left;
 }
 
-.navigation2 {
+/*.navigation2 {
 	text-align:center;	
 	display:inline-block;
     height: 65px;	
@@ -90,7 +90,7 @@ a {
 	line-height: 40px;
 	text-decoration: none;
 	padding: 1em;
-}
+}*/
 
 .nav-middle {
 	width: 100%;
@@ -156,12 +156,13 @@ p {
 	text-align: left;
 }
 
-.artwork{
+.print, .media, .art {
 	width: 33.333%;
 	padding: 10px;
 	float: left;
 	margin: auto;
 }
+
 
 .copyright {
     text-align: left;
@@ -197,6 +198,63 @@ footer {
 }
 
 
+
+
+/* --------------------  Isatope -----------------*/
+
+.portfolioFilter {
+	text-align:center;	
+	display:inline-block;
+    height: 65px;	
+	margin-top:30px;
+	color: #6B6665;
+	float: none;
+}
+
+.portfolioFilter a { 
+    font-size: 16px;
+	text-transform:uppercase;
+	letter-spacing:2px;
+	line-height: 40px;
+	text-decoration: none;
+	padding: 1em;
+}
+
+.portfolioFilter a.current { 
+    font-weight:bold;
+    color: #5fbbc6;
+}
+
+
+.isotope-item {
+    z-index: 2;
+}
+.isotope-hidden.isotope-item {
+    pointer-events: none;
+    z-index: 1;
+}
+.isotope,
+.isotope .isotope-item {
+  /* change duration value to whatever you like */
+
+    -webkit-transition-duration: 0.8s;
+    -moz-transition-duration: 0.8s;
+    transition-duration: 0.8s;
+}
+.isotope {
+    -webkit-transition-property: height, width;
+    -moz-transition-property: height, width;
+    transition-property: height, width;
+}
+.isotope .isotope-item {
+    -webkit-transition-property: -webkit-transform, opacity;
+    -moz-transition-property: -moz-transform, opacity;
+    transition-property: transform, opacity;
+}
+
+
+
+
 /* -------------- RESPONSIVE DESIGN  --------------- */
 
 /* -------------- desktop/laptop  --------------- */
@@ -210,7 +268,7 @@ footer {
 
 @media screen and (max-width: 768px){
 
-	.artwork{
+	.print, .media, .art {
 		width: 50%;
 	}
 
@@ -239,22 +297,29 @@ footer {
 @media screen and (max-width: 640px){
 
 	header {
-	max-width:95%;
-	margin:0px auto 35px auto;
-	border-bottom: 0px;
+	width:100%;	
+	border-bottom:0;
+	margin:0px auto 25px auto;
+	height: 90px;
 	}
 
-	header img{
-	float: none;
-	padding-bottom: 20px;
+	header img {
+		padding-top: 15px;
+		padding-bottom: 15px;
+	   text-align: center; 
+	}
+
+	#logo {
+	text-align:center;
+	margin:20px 0;
 	}
 
 	.navigation1 {
-   float:none;
-	}
-
-	.navigation1 a {
-	float: none;
+    float: none;
+	width:100%;
+    text-align: center;
+	padding-top: -10px;
+	padding-left: 50px;
 	}
 
 	#top-section { /*blue box*/
@@ -273,12 +338,6 @@ footer {
 	#points {
 		font-size: 30px;
 	}
-
-	#wrapper {
-		width: 96%;
-
-	}
-
 }
 
 
@@ -286,8 +345,6 @@ footer {
 /* -------------- phone sm--------------- */
 
 @media screen and (max-width: 480px){
-
-	
 
 	#top-section { /*blue box*/
 		padding: 2em;
@@ -315,14 +372,14 @@ footer {
 	.nav-middle {
 	font-size: 12px;
 	width: 100%;
-	margin-bottom: -45px;
+	margin-bottom: -35px;
 	text-align: center;
 	}
-	
-	.artwork{
+
+	.print, .media, .art {
 		width: 100%;
 	}
-
+	
 	.copyright {
     text-align: center;
     font-size: 9px;
