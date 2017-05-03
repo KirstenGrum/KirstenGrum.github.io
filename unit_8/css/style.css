@@ -34,9 +34,10 @@ header {
 	position:relative;
 }
 
-header img{
+#logo{
 	float:left;
 	width: 190px;
+	display: block;
 }
 
 nav { 
@@ -119,10 +120,7 @@ p {
  	color: white;
 }
 
-#logo {
-	margin: auto;
-   	display:inline;
-	}
+
 
 #top-section { /*blue box*/
 	background-color: #5fbbc6;
@@ -300,27 +298,34 @@ footer {
 	width:100%;	
 	border-bottom:0;
 	margin:0px auto 25px auto;
-	height: 90px;
+	height: auto;
+	
 	}
 
-	header img {
+	#logo{
+		margin: 0 auto;
 		padding-top: 15px;
 		padding-bottom: 15px;
-	   text-align: center; 
+	   float: none;
 	}
 
-	#logo {
-	text-align:center;
-	margin:20px 0;
-	}
+	
 
 	.navigation1 {
-    float: none;
-	width:100%;
-    text-align: center;
-	padding-top: -10px;
-	padding-left: 50px;
+    
+	width: 100%;
+	max-width: 300px;
+	margin: 0 auto;
+	float: none;
+	display: block;
 	}
+
+	.navigation1 a {
+	float: left;
+	display: block;
+	width: 50%;
+	text-align: center;
+}
 
 	#top-section { /*blue box*/
 		padding: 3.5em;
