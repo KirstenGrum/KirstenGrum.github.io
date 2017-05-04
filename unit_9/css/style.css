@@ -1,0 +1,505 @@
+/* Keep CSS code cleaner */
+
+@import url('https://fonts.googleapis.com/css?family=Cormorant');
+@import url('https://fonts.googleapis.com/css?family=Signika');
+
+/* resets browser default margin and padding (removes it) so y
+ou can go in and edit what you want -- ALWAYS ADD TO NEW WEBSITE 
+and then go back in and fix padding and margins the way  you want them! 
+-- the bottom line means: calculation for padding and widths*/
+*{
+	margin:0; 
+	padding:0; 
+	box-sizing: border-box;
+}
+/* need to have CSS look like the webpage -- 
+it needs to follow along - so as not to have duplicate CSS 
+code (which the lowest on the page will override that, that is on top of it)
+The body tag needs to go under the reset removal of margin/padding ----
+--- you will use more classes then ID's useally in your webpage.*/
+
+body {
+	font-size: 16px;
+	font-family: 'Signika', sans-serif;
+	line-height:14px;
+    background-color: #f3f3f3;
+    min-width: 320px;
+
+		}
+
+header {
+	height: 60px;
+	margin:0px auto 55px auto;
+	border-bottom:solid 1px #ababab;
+	background-color: #f3f3f3;
+	position: relative;
+}
+
+#logo{
+	float:left;
+	width: 190px;
+	display: block;
+}
+
+nav { 
+    display:inline-block;
+}
+
+nav a {
+	text-decoration: none;
+	color: #6B6665;
+		}
+
+/* mouse over link */
+a:hover {
+   color: #5fbbc6; /* blue in logo */
+}
+
+a:active {
+	color: #5fbbc6; 
+}
+
+a {
+	text-decoration:none;
+	color: #6B6665;
+    }
+
+.navigation1 {
+   float:right;
+}
+
+.navigation1 a {
+	font-size: 16px;
+	text-transform: uppercase;
+	text-decoration: none;
+	padding: 1em;
+	float:left;
+}
+
+/*.navigation2 {
+	text-align:center;	
+	display:inline-block;
+    height: 65px;	
+	margin-top:30px;
+	color: #6B6665;
+	float: none;
+}
+	
+.navigation2 a {
+	font-size: 16px;
+	text-transform:uppercase;
+	letter-spacing:2px;
+	line-height: 40px;
+	text-decoration: none;
+	padding: 1em;
+}*/
+
+.nav-middle {
+	width: 100%;
+	margin-bottom: -30px;
+	text-align: center;
+	position: relative;
+}
+
+main{
+	color: #3C3C3C;
+	padding-top: 15px;
+	padding-bottom: .5px;
+	margin-top:8px
+}
+
+img {
+	width: 100%;
+}
+
+p {
+	text-align: left;
+	font-family: 'Cormorant', serif;
+	font-size: 16px;
+	line-height:1.5em;
+	width: 100%; 
+ 	color: white;
+}
+
+
+
+#top-section { /*blue box*/
+	background-color: #5fbbc6;
+	color: #4f4f4f;
+	margin-bottom: auto;
+	text-align: left;
+	padding: 4em;
+}
+
+#top-section span {
+	display:block;
+}
+
+#welcTXT {
+	font-size: 35px;
+}
+
+#bigTXT {
+	font-size:125px;
+	margin-left: -8px;
+}
+
+#port-wordsBig {
+	line-height: .8;
+}
+
+#points {
+	font-family: 'Signika', sans-serif;
+	font-size: 53.5px;
+	color: #FFFFFF;
+	text-align: left;
+}
+
+.print, .media, .art {
+	width: 33.333%;
+	padding: 10px;
+	float: left;
+	margin: auto;
+}
+
+
+
+.Bold_Headings_SidePara {
+	font-family: 'Cormorant', serif;
+	font-size: 16px;
+	color: #6B6665;
+	font-weight: bold;
+}
+.Grey_Bold_SideHeads {
+	font-family: 'Cormorant', serif;
+	font-size: 16px;
+	font-weight: bold;
+	color: #6B6665;
+}
+
+.work-page div{
+	max-width: 80%;
+	padding-top: 3em;
+	margin: 0 auto;
+}
+.description{
+	width: 25%;
+	float:left;
+	padding-right: 12px;
+	position: fixed;
+}
+.description p{
+	font-family: 'Signika', sans-serif;
+	color: #6B6665;
+	line-height: 1.3em;
+	padding-top: 1em;
+}
+.photos{
+	width: 65%;
+	float:right;
+}
+.photos img{
+	width: 70%;
+	height: 70%;
+	padding-bottom: 0.5em;
+	float:right;
+
+}
+
+
+
+
+
+.copyright {
+    text-align: left;
+    font-size: .75em;
+    padding-left: 10px;
+}
+
+footer {
+	color: #6B6665;
+	height:	20px;
+	margin:	10px auto 10px auto;
+	border-top:solid 1px #ababab;
+	padding-top: 5px;
+	position:relative;
+	align-content: left;
+    text-decoration: none;
+}
+
+.clearfix:after {
+	content: " ";
+	display: block;
+	height: 0;
+	font-size: 0;
+	visibility: hidden;
+	clear: both;
+}
+
+.wrapper {
+	max-width: 1080px;
+	background-position: center;
+	margin: auto;
+	position: relative;
+}
+
+
+
+
+/* --------------------  Isatope -----------------*/
+
+.portfolioFilter {
+	text-align:center;	
+	display:inline-block;
+    height: 65px;	
+	margin-top:30px;
+	color: #6B6665;
+	float: none;
+}
+
+.portfolioFilter a { 
+    font-size: 16px;
+	text-transform:uppercase;
+	letter-spacing:2px;
+	line-height: 40px;
+	text-decoration: none;
+	padding: 1em;
+}
+
+.portfolioFilter a.current { 
+    font-weight:bold;
+    color: #5fbbc6;
+}
+
+
+.isotope-item {
+    z-index: 2;
+}
+.isotope-hidden.isotope-item {
+    pointer-events: none;
+    z-index: 1;
+}
+.isotope,
+.isotope .isotope-item {
+  /* change duration value to whatever you like */
+
+    -webkit-transition-duration: 0.8s;
+    -moz-transition-duration: 0.8s;
+    transition-duration: 0.8s;
+}
+.isotope {
+    -webkit-transition-property: height, width;
+    -moz-transition-property: height, width;
+    transition-property: height, width;
+}
+.isotope .isotope-item {
+    -webkit-transition-property: -webkit-transform, opacity;
+    -moz-transition-property: -moz-transform, opacity;
+    transition-property: transform, opacity;
+}
+
+
+
+
+/* -------------- RESPONSIVE DESIGN  --------------- */
+
+/* -------------- desktop/laptop  --------------- */
+
+@media screen and (max-width: 1024px){
+
+}
+
+
+/* -------------- tablets/sm  --------------- */
+
+@media screen and (max-width: 768px){
+
+	.print, .media, .art {
+		width: 50%;
+	}
+
+	#top-section { /*blue box*/
+		padding: 3.5em;
+	}
+
+	#welcTXT {
+		font-size: 25px;
+	}
+
+	#bigTXT {
+		font-size: 90px;
+		margin-left: -4px;
+	}
+
+	#points {
+		font-size: 34px;
+	}
+
+	.work-page div{
+	max-width: 80%;
+	padding-top: 3em;
+	margin: 0 45px 0 45px;
+	}
+
+	.description{
+		width: 35%;
+		float:left;
+		padding-right: 15px;
+		position: fixed;
+	}
+
+	.description p{
+		font-family: 'Signika', sans-serif;
+		color: #6B6665;
+		line-height: 1.3em;
+		padding-top: 1em;
+	}
+
+	.photos{
+		width: 65%;
+		float:right;
+	}
+
+	.photos img{
+		width: 65%;
+		height: 65%;
+		padding-bottom: 0.5em;
+		float:right;
+	}
+
+}
+
+
+/* -------------- phone larger  --------------- */
+
+@media screen and (max-width: 640px){
+
+	header {
+	width:100%;	
+	border-bottom:0;
+	margin:0px auto 25px auto;
+	height: auto;
+	
+	}
+
+	#logo{
+		margin: 0 auto;
+		padding-top: 15px;
+		padding-bottom: 15px;
+	   float: none;
+	}
+
+	.navigation1 {
+    
+	width: 100%;
+	max-width: 300px;
+	margin: 0 auto;
+	float: none;
+	display: block;
+	}
+
+	.navigation1 a {
+	float: left;
+	display: block;
+	width: 50%;
+	text-align: center;
+}
+
+	#top-section { /*blue box*/
+		padding: 3.5em;
+	}
+
+	#welcTXT {
+		font-size: 18px;
+	}
+
+	#bigTXT {
+		font-size: 70px;
+		margin-left: -4px;
+	}
+
+	#points {
+		font-size: 30px;
+	}
+
+		.work-page div{
+		max-width: auto;
+		padding-top: 3em;
+		margin: auto;
+	}
+
+	.description{
+		width: 90%;
+		float: none;
+		padding-right: auto;
+		position: relative;
+	}
+
+	.description p{
+		font-family: 'Signika', sans-serif;
+		color: #6B6665;
+		line-height: 1.3em;
+		padding-top: 1em;
+	}
+
+	.photos{
+		width: 80%;
+		float: none;
+	}
+
+	.photos img{
+		width: 90%;
+		height: 90%;
+		padding-bottom: 0.5em;
+		float: none;
+	}
+}
+
+
+
+/* -------------- phone sm--------------- */
+
+@media screen and (max-width: 480px){
+
+	#top-section { /*blue box*/
+		padding: 2em;
+	}
+
+	#welcTXT {
+		font-size: 16px;
+	}
+
+	#bigTXT {
+		font-size: 40px;
+		margin-left: -2px;
+	}
+
+	#points {
+		font-size: 17px;
+	}
+
+	.navigation2 a {
+	letter-spacing: 1px;
+	line-height: 25px;
+	margin-left: -4px;
+	}
+
+	.nav-middle {
+	font-size: 12px;
+	width: 100%;
+	margin-bottom: -35px;
+	text-align: center;
+	}
+
+	.print, .media, .art {
+		width: 100%;
+	}
+	
+	.copyright {
+    text-align: center;
+    font-size: 9px;
+    padding-left: 0px;
+	}
+}
+
+
